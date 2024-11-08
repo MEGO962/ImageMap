@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1e0c6; /* Soft, warm beige representing desert sands */
+            font-family: 'Palatino', serif; /* Elegant serif font to maintain a timeless feel */
+            color: #3e2b1f; /* Darker brown to complement desert tones */
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        /* Left section (description) */
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #5e4d38; /* Rich brown for readability and to match desert tones */
+            opacity: 0; /* Initially hidden */
+            transform: translateY(50px); /* Initially positioned lower */
+            transition: opacity 1s ease, transform 1s ease; /* Transition for fade-in and slide-up effect */
+        }
+
+        /* Heading style */
+        h1 {
+            font-size: 2.8rem;
+            color: #b55e2d; /* Terracotta color, inspired by desert sunsets and Petra's ruins */
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        /* Global paragraph text styling for Ma'an */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #4d3c28; /* Earthy brown color reflecting desert terrain */
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #d57c4c; /* Ochre/red border inspired by the desert and Petra's colors */
+            padding-left: 15px;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(50px); /* Initially positioned lower */
+            transition: opacity 1s ease, transform 1s ease; /* Transition for fade-in and slide-up effect */
+        }
+
+        /* Right section (image) */
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+            opacity: 0; /* Initially hidden */
+            transform: translateX(50px); /* Initially positioned off-screen to the right */
+            transition: opacity 1s ease, transform 1s ease; /* Transition for fade-in and slide effect */
+        }
+
+        /* Image styling */
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            border: 8px solid #f3d7a0; /* Light beige border, evoking desert sand textures */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for image */
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <title>Ma'an</title>
+</head>
+<body>
+
+    <!-- Left section: Description about Ma'an -->
+    <div class="description">
+        <h1>Ma'an: Gateway to the Desert</h1>
+        <p>
+            Ma'an is a historic city in southern Jordan, located in the heart of the desert. It is the gateway to the famous Petra archaeological site, which draws visitors from around the world. Ma'an’s desert landscape, with its rugged terrain and arid environment, offers a stark contrast to the lush greenery of Jordan's northern regions.
+        </p>
+        <p>
+            The city of Ma'an holds a special place in Jordan's history, both as an ancient trade route and as a modern-day hub. The surrounding desert offers a unique environment for exploring ancient ruins, and the nearby **Petra** has been recognized as one of the New Seven Wonders of the World, making Ma'an a crucial location for cultural tourism in Jordan.
+        </p>
+    </div>
+
+    <!-- Right section: Image of Ma'an -->
+    <div class="image-container">
+        <img src="Ma'an.jpeg" alt="Image of Ma'an Desert Landscape">
+    </div>
+
+    <script>
+        // Scroll animation logic
+        const elements = document.querySelectorAll('.description, .image-container, p');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            // Check each element for scroll position and animate
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top + scrollY;
+                const elementHeight = element.offsetHeight;
+                const windowHeight = window.innerHeight;
+
+                if (scrollY + windowHeight > elementPosition + elementHeight * 0.3) {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

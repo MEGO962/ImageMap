@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d8c4a1; /* Warm sandstone tone to evoke the color of Al-Karak Castle's stones */
+            font-family: 'Palatino', serif; /* Elegant serif font for a classic, historical feel */
+            color: #3e2c1c; /* Dark brown color reflecting the earth tones of the castle and city */
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Left section (description) */
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #5b4d3f; /* Rich brown for better readability, reflecting the stone tones */
+        }
+
+        /* Heading style */
+        h1 {
+            font-size: 2.8rem;
+            color: #b25f28; /* Terracotta color inspired by the warm stones of the castle */
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        /* Paragraph text styling for Al-Karak */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #4b3d2b; /* Dark brownish tone to reflect the ancient stones of Al-Karak Castle */
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #a8754a; /* Warm, sandy golden tone inspired by Al-Karak's stonework */
+            padding-left: 15px;
+        }
+
+        /* Right section (image) */
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+        }
+
+        /* Image styling */
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            border: 8px solid #c1a277; /* Border color reflecting the ancient stone's texture */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for image */
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <title>Al-Karak</title>
+</head>
+<body>
+
+    <!-- Left section: Description about Al-Karak -->
+    <div class="description">
+        <h1>Al-Karak: The Crusader Castle</h1>
+        <p>
+            Al-Karak, located in the heart of Jordan, is home to one of the most impressive Crusader castles in the region. Perched on a hilltop, Al-Karak Castle offers stunning panoramic views of the surrounding desert and hills, making it a historical gem and a must-visit landmark in Jordan.
+        </p>
+        <p>
+            The city itself is a rich tapestry of medieval history, ancient architecture, and a deep connection to the past. As you explore its narrow streets and ancient ruins, you’ll feel transported to a time of knights, kings, and epic battles. Al-Karak is a testament to Jordan's rich historical legacy, with its well-preserved castle standing as a proud symbol of the region’s past.
+        </p>
+    </div>
+
+    <!-- Right section: Image of Al-Karak -->
+    <div class="image-container">
+        <img src="Al-Karak.jpg" alt="Image of Al-Karak Castle">
+    </div>
+
+</body>
+</html>

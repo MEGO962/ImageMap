@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f0e5; /* Soft sand color, reminiscent of Jerash's ancient stones */
+            font-family: 'Arial', sans-serif;
+            color: #2f2f2f;
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Left section (description) */
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #4e4e4e; /* Neutral dark gray text */
+        }
+
+        /* Heading style */
+        h1 {
+            font-size: 2.5rem;
+            color: #8b6b4e; /* Warm earthy brown, inspired by the ancient ruins */
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        /* Paragraph text styling */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #8b7d58; /* Warm, ancient stone color, like the ruins of Jerash */
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #b19373; /* Sandstone gold color, reminiscent of the Jerash ruins */
+            padding-left: 15px;
+        }
+
+        /* Right section (image) */
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+        }
+
+        /* Image styling */
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for image */
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Slight zoom with a stronger shadow */
+        }
+    </style>
+    <title>Jerash</title>
+</head>
+<body>
+
+    <!-- Left section: Description about Jerash -->
+    <div class="description">
+        <h1>Jerash: The Ancient City of Roman Grandeur</h1>
+        <p>
+            Jerash, often referred to as the "Pompeii of the East," is one of the best-preserved Roman cities outside Italy. Known for its impressive Oval Plaza, majestic columns, and ancient theaters, Jerash is a testament to the grandeur of Roman architecture.
+        </p>
+        <p>
+            Walk through the ancient streets, where the echoes of history still resonate, and explore the temples, arches, and baths that have stood the test of time. Surrounded by olive groves and rich greenery, Jerash offers a unique blend of natural beauty and historical wonder.
+        </p>
+    </div>
+
+    <!-- Right section: Image of Jerash -->
+    <div class="image-container">
+        <img src="Jerash.jpg" alt="Image of Jerash">
+    </div>
+
+</body>
+</html>

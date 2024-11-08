@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #c8e0f0; /* Light blue, representing the tranquil waters of the Red Sea */
+            font-family: 'Arial', sans-serif; /* Clean, modern sans-serif font for a fresh look */
+            color: #2c3e50; /* Dark grayish-blue, representing the depth of the ocean */
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Left section (description) */
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #34495e; /* A deep, cool blue for readability and to evoke the sea */
+        }
+
+        /* Heading style */
+        h1 {
+            font-size: 2.8rem;
+            color: #1f77b4; /* Ocean blue inspired by Aqaba's marine environment */
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        }
+
+        /* Paragraph text styling */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #2c3e50; /* Dark blue for text, reflecting the colors of the ocean */
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #27ae60; /* Sea green border, inspired by Aqaba’s vibrant marine life */
+            padding-left: 15px;
+        }
+
+        /* Right section (image) */
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+        }
+
+        /* Image styling */
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            border: 8px solid #f1c40f; /* Soft yellow border, reminiscent of sun-drenched beaches */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for image */
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+    <title>Aqaba</title>
+</head>
+<body>
+
+    <!-- Left section: Description about Aqaba -->
+    <div class="description">
+        <h1>Aqaba: Jordan’s Gateway to the Red Sea</h1>
+        <p>
+            Aqaba is a vibrant coastal city in southern Jordan, situated on the shores of the Red Sea. Known for its sunny weather, crystal-clear waters, and breathtaking coral reefs, Aqaba is a popular destination for both tourists and locals alike. Whether you’re looking to relax on the beach, explore marine life, or enjoy the scenic views of the desert and sea, Aqaba offers an unforgettable experience.
+        </p>
+        <p>
+            Aqaba is not just a beach city; it’s a hub of historical significance. The city’s strategic location at the crossroads of Jordan, Israel, Egypt, and Saudi Arabia has shaped its cultural richness. With its combination of natural beauty and historical landmarks, Aqaba remains a key part of Jordan’s charm, offering something for everyone.
+        </p>
+    </div>
+
+    <!-- Right section: Image of Aqaba -->
+    <div class="image-container">
+        <img src="Aqaba.jpg" alt="Image of Aqaba Beach and Sea">
+    </div>
+
+</body>
+</html>

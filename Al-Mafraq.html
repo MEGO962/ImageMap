@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0e1b5; /* Soft, sandy beige reflecting the agricultural landscape */
+            font-family: 'Georgia', serif; /* Elegant serif font for a timeless, rural feel */
+            color: #3e4b38; /* Deep greenish-brown, representing the fertile lands of Al-Mafraq */
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Left section (description) */
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #4a5336; /* Earthy green to complement the agricultural landscape */
+        }
+
+        /* Heading style */
+        h1 {
+            font-size: 2.8rem;
+            color: #5e7d3c; /* Olive green, inspired by the crops and fertile fields of Al-Mafraq */
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        }
+
+        /* Paragraph text styling */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #3d4a31; /* Dark green, mirroring the rural charm of the region */
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #a67c52; /* Warm brown border, representing the soil of Al-Mafraq */
+            padding-left: 15px;
+        }
+
+        /* Right section (image) */
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+        }
+
+        /* Image styling */
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            border: 6px solid #e3c7a5; /* Light beige border, reflecting the dusty countryside of Al-Mafraq */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for image */
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+    <title>Al-Mafraq</title>
+</head>
+<body>
+
+    <!-- Left section: Description about Al-Mafraq -->
+    <div class="description">
+        <h1>Al-Mafraq: The Heart of Jordan’s Farmlands</h1>
+        <p>
+            Al-Mafraq is a charming city located in the northern part of Jordan, known for its vast agricultural lands and fertile fields. As one of the main agricultural hubs of the country, Al-Mafraq is home to a rich diversity of crops, from grains to vegetables, which sustain much of the country’s food production.
+        </p>
+        <p>
+            Al-Mafraq’s rural charm offers a slower pace of life, where tradition and nature go hand-in-hand. The city serves as a bridge between the desert and the fertile lands, offering a unique perspective on the Jordanian countryside. Its proximity to the Syrian border and the ancient trade routes has shaped its cultural heritage, making it an integral part of the region's history.
+        </p>
+    </div>
+
+    <!-- Right section: Image of Al-Mafraq -->
+    <div class="image-container">
+        <img src="Al-Mafraq.jpg" alt="Image of Al-Mafraq Farmlands">
+    </div>
+
+</body>
+</html>
