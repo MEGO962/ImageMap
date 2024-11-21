@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f0e5;
+            font-family: 'Arial', sans-serif;
+            color: #2f2f2f;
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #4e4e4e;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #8b6b4e;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #8b7d58;
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #b19373;
+            padding-left: 15px;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <title>Jerash</title>
+</head>
+<body>
+
+    <div class="description">
+        <h1>Jerash: The Ancient City of Roman Grandeur</h1>
+        <p>
+            Jerash, often referred to as the "Pompeii of the East," is one of the best-preserved Roman cities outside Italy. Known for its impressive Oval Plaza, majestic columns, and ancient theaters, Jerash is a testament to the grandeur of Roman architecture.
+        </p>
+        <p>
+            Walk through the ancient streets, where the echoes of history still resonate, and explore the temples, arches, and baths that have stood the test of time. Surrounded by olive groves and rich greenery, Jerash offers a unique blend of natural beauty and historical wonder.
+        </p>
+    </div>
+
+    <div class="image-container">
+        <img src="Jerash.jpg" alt="Image of Jerash">
+    </div>
+
+</body>
+</html>

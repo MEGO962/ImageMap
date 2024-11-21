@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e7d6b2;
+            font-family: 'Georgia', serif;
+            color: #5a4d3a;
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #4a392f;
+        }
+        h1 {
+            font-size: 2.8rem;
+            color: #9c5c2e;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #5b4d2f; 
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #d88b56;
+            padding-left: 15px;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            border: 6px solid #f0d7a1;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+       
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <title>Al-Tafulla</title>
+</head>
+<body>
+    <div class="description fade-in">
+        <h1>Al-Tafulla: The Heart of the Rural Landscape</h1>
+        <p>
+            Al-Tafulla is a serene and charming rural city in Jordan, surrounded by beautiful hills and rich farmland. Known for its traditional lifestyle and agricultural practices, Al-Tafulla reflects the beauty of Jordan's countryside, where the land and people have been connected for generations.
+        </p>
+        <p>
+            The city is a haven for nature lovers and anyone seeking a slower pace of life. Its rolling hills and lush fields provide a perfect escape from the hustle and bustle of urban areas, offering a glimpse into a simpler, more peaceful way of living. Al-Tafulla is not just a place; it is an experience, with its welcoming community and breathtaking views of the Jordanian countryside.
+        </p>
+    </div>
+    <div class="image-container fade-in">
+        <img src="Al-Tafilah.jpg" alt="Image of Al-Tafulla Countryside">
+    </div>
+</body>
+</html>

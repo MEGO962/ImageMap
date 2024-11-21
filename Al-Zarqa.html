@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffeed8;
+            font-family: 'Arial', sans-serif;
+            color: #2f2f2f;
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #495057;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #8a7b6d;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555555; 
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #6e7d7e;
+            padding-left: 15px;
+        }
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+        }
+    </style>
+    <title>Al-Zarqa</title>
+</head>
+<body>
+    <div class="description">
+        <h1>Zarqa: The Industrial Pulse of Jordan</h1>
+        <p>
+            Zarqa, the bustling industrial heart of Jordan, is a city where tradition meets progress. Known for its factories, workshops, and vibrant markets, Zarqa plays a crucial role in the country's economic growth.
+            The city’s name, derived from the Arabic word for "blue," hints at its historic connection to the Zarqa River. Although urban and industrial in nature, Zarqa is also a cultural hub where visitors can explore its rich heritage, traditional cuisine, and friendly neighborhoods.
+        </p>
+        <p>
+            Stroll through its dynamic streets, visit the historic railway station, and experience the authentic spirit of a city that embodies resilience and growth. Zarqa is not just a place—it's an experience.
+        </p>
+    </div>
+    <div class="image-container">
+        <img src="Al-Zarqa.jpg" alt="Image of Zarqa">
+    </div>
+
+</body>
+</html>

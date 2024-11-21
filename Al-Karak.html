@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d8c4a1;
+            font-family: 'Palatino', serif;
+            color: #3e2c1c;
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #5b4d3f;
+        }
+        h1 {
+            font-size: 2.8rem;
+            color: #b25f28;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #4b3d2b;
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #a8754a;
+            padding-left: 15px;
+        }
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            border: 8px solid #c1a277;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <title>Al-Karak</title>
+</head>
+<body>
+    <div class="description">
+        <h1>Al-Karak: The Crusader Castle</h1>
+        <p>
+            Al-Karak, located in the heart of Jordan, is home to one of the most impressive Crusader castles in the region. Perched on a hilltop, Al-Karak Castle offers stunning panoramic views of the surrounding desert and hills, making it a historical gem and a must-visit landmark in Jordan.
+        </p>
+        <p>
+            The city itself is a rich tapestry of medieval history, ancient architecture, and a deep connection to the past. As you explore its narrow streets and ancient ruins, you’ll feel transported to a time of knights, kings, and epic battles. Al-Karak is a testament to Jordan's rich historical legacy, with its well-preserved castle standing as a proud symbol of the region’s past.
+        </p>
+    </div>
+    <div class="image-container">
+        <img src="Al-Karak.jpg" alt="Image of Al-Karak Castle">
+    </div>
+
+</body>
+</html>

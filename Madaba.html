@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fae8d2;
+            font-family: 'Palatino', serif;
+            color: #4a3b2f;
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .description {
+            flex: 1;
+            max-width: 45%;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #5e5043;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #b35e22;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #5f4e3a;
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #d78c48;
+            padding-left: 15px;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            border: 8px solid #e8c09a;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <title>Madaba</title>
+</head>
+<body>
+
+    <div class="description">
+        <h1>Madaba: The City of Mosaics</h1>
+        <p>
+            Madaba, a city steeped in history, is renowned for its stunning Byzantine and Umayyad mosaics. The city is home to the famous Madaba Map, a detailed mosaic map of the Holy Land from the 6th century, found in the Greek Orthodox Church of St. George.
+        </p>
+        <p>
+            As you wander through the narrow streets, you’ll encounter colorful mosaics, traditional handicrafts, and a warm community that embodies the spirit of Jordanian hospitality. Madaba is not just a city—it’s a living museum that tells the story of centuries past.
+        </p>
+    </div>
+
+    <div class="image-container">
+        <img src="Madaba.png" alt="Image of Madaba">
+    </div>
+
+</body>
+</html>
